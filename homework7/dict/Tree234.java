@@ -480,6 +480,8 @@ public class Tree234 extends IntDictionary {
     t.testHelper("((1 4)7(11 16))22((23)28(37 49))50((51)60(66 75 81))84" +
                  "((86)95(99 100))");
 
+    System.out.println("\nInserting 80.");
+    t.insert(80);
     t.testHelper("(((1 4)7(11 16))22((23)28(37 49)))50(((51)60(66)75" +
                  "(80 81))84((86)95(99 100)))");
 
