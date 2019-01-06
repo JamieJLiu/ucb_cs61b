@@ -7,6 +7,7 @@ package pj3;
 import graph.*;
 import graphalg.*;
 import list.InvalidNodeException;
+import list.QueueEmptyException;
 
 import java.util.*;
 
@@ -106,7 +107,7 @@ public class KruskalTest {
     }
   }
 
-  public static void main(String[] args) throws InvalidNodeException {
+  public static void main(String[] args) throws InvalidNodeException, QueueEmptyException {
     int i, j;
     int score;
     WUGraph g, t;

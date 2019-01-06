@@ -35,7 +35,7 @@ public class HashTableChained implements Dictionary {
 	  numOfBk = (int)(sizeEstimate/0.75);
 	  buckets = new List[numOfBk];
 	  for(int i = 0; i < numOfBk; i++){
-		  buckets[i] = new SList();
+		  buckets[i] = new DList();
 		  
 	  }
 	  numOfEntries = 0;
@@ -53,7 +53,7 @@ public class HashTableChained implements Dictionary {
 	numOfBk = (int)(SIZEESTIMATE/0.75);
 	buckets = new List[numOfBk];
 	  for(int i = 0; i < numOfBk; i++){
-		  buckets[i] = new SList();
+		  buckets[i] = new DList();
 		  
 	  }
 	  numOfEntries = 0;
@@ -205,7 +205,7 @@ public class HashTableChained implements Dictionary {
   public void makeEmpty() {
     // Your solution here.
 	  for(int i = 0; i<numOfBk; i++ ){
-		  buckets[i] = new SList();
+		  buckets[i] = new DList();
 	  }
 	  numOfEntries = 0;
 	  collisions = 0;
